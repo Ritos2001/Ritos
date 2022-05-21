@@ -1,0 +1,9 @@
+#!/bin/bash
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+docker run --name basededatos2 -p 3306:3306 -e MYSQL_ROOT_PASSWORD=Lupo.007 -e MYSQL_USER=admin -e MYSQL_PASSWORD=Lupo.007 -e MYSQL_DATABASE=Ritos -d mariadb
+docker start basededatos2
+docker exec basededatos2 mysql -u root --password="Lupo.007" Ritos< ../schema.sql
+docker exec basededatos2 mysql -u root --password="Lupo.007" Ritos< ../mysql.sql
+docker exec basededatos2 mysql -u root --password="Lupo.007" Ritos< ../vistas.sql
+docker exec basededatos2 mysql -u root --password="Lupo.007" Ritos< ../procedures.sql
