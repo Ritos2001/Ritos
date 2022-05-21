@@ -1,0 +1,106 @@
+p{
+color:white;
+}
+span{
+color:blue;
+}
+th{
+font-family:verdana;
+    font-size:25px;
+    color:green;
+    text-shadow: 1px  0px 0px black,
+                 0px  1px 0px black,
+                -1px  0px 0px black,
+                 0px -1px 0px black;
+text-aling:left;
+}
+td{
+    font-family:verdana;
+    font-size:25px;
+    color:white;
+    text-shadow: 1px  0px 0px black,
+                 0px  1px 0px black,
+                -1px  0px 0px black,
+                 0px -1px 0px black;
+  }
+  label{
+    font-family:verdana;
+    font-size:25px;
+    color:white;
+    text-shadow: 1px  0px 0px black,
+                 0px  1px 0px black,
+                -1px  0px 0px black,
+                 0px -1px 0px black;
+  }
+  
+  .red{
+      background-color: red;
+      color:white;
+    }
+    .green{
+        background-color: green;
+        color:white;
+    }
+    .orange{
+        background-color: orange;
+        color:white;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    
+    body{
+        background-image: url(https://img.freepik.com/foto-gratis/surtido-pan-horneado-sobre-fondo-madera_23-2148432263.jpg?w=2000);
+    }
+    h1{
+        color:orange;
+        text-shadow: brown 2px 5px;
+    }
+    button{
+        border: 1px solid black;
+        background-color: blue;
+        color:white;
+        margin:auto;
+    }
+    .contenedor {
+      position: relative;
+    }
+
+    .hijo {
+      width: 900px;
+      height: 400px;
+      position: absolute;
+      top: 20%;
+      left: 20%;
+      margin: -5px 0 0 -15px;
+     }
+    .hijo2 {
+      width: 900px;
+      height: 400px;
+      position: absolute;
+      top: 50%;
+      left: 20%;
+      margin: -5px 0 0 -15px;
+	
+    }
+    .center{
+    text-align:center;
+    }
+    input[type="submit"] {
+        border: 1px solid black;
+        background-color: blue;
+        color:white;
+        margin:auto;
+     }
+    input[type="number"] {
+       width: 50px;
+     }
+    input[type="text"] {
+       width: 120px;
+     }
+input[type="password"] {
+       width: 120px;
+     }
+    
+

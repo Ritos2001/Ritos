@@ -1,0 +1,62 @@
+body{
+    background-image:  url(https://img.freepik.com/foto-gratis/surtido-pan-horneado-sobre-fondo-madera_23-2148432263.jpg?w=2000);
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: linear-gradient(blue, pink);
+    
+}
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+li a:hover {
+    background: linear-gradient(aqua, black);
+}
+h1{
+    color:blue;
+    text-align: center;
+    text-shadow: lightblue 2px 5px;
+}
+h2{
+    color: blue;
+    text-align: center;
+}
+
+p {
+    font-family: Helvetica;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    color: #0838c7;
+    background-color: #6ceb6c;
+    border-style: solid;
+    border-color: #f50c0c;
+    border-width: 2px;
+    margin: 14px;
+    padding: 20px;
+    border-radius: 14px;
+}
+.galeria{
+    border:solid 5px black;
+}
+div{
+    padding-left: 10%;
+}
+.div{
+    padding-left: 26%;
+}
+.div2{
+    padding-left: 35%;
+}
