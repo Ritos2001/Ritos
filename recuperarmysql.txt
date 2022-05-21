@@ -1,0 +1,4 @@
+#!/bin/bash
+docker start fa
+docker exec fa mysqldump Ritos proveedor suministro suministro_producto producto producto_pedido pedido usuario rol empleado direcciones -u r$
+sshpass -p 'Lupo.007' scp -r mysql.sql basededatos@192.168.10.206:/home/basededatos
