@@ -1,0 +1,30 @@
+//
+// Do any local configuration here
+//
+
+// Consider adding the 1918 zones here, if they are not used in your
+// organization
+include "/etc/bind/zones.rfc1918";
+include "/etc/bind/rndc.key";
+
+controls {
+      inet 127.0.0.1 port 953
+             allow { 127.0.0.1; } keys { "rndc-key"; };
+};
+
+zone "Ritos.local" {
+	type master;
+        file "/var/lib/bind/Ritos.db";
+	allow-transfer {192.168.10.2;};
+	notify yes;
+        allow-update { key "rndc-key"; };
+};
+
+zone "10.168.192.in-addr.arpa" {
+	type master;
+        file "/var/lib/bind/192.rev";
+	allow-transfer {192.168.10.2;};
+        notify yes;
+        allow-update { key "rndc-key"; };
+};
+

@@ -1,0 +1,17 @@
+$ORIGIN .
+$TTL 604800	; 1 week
+Ritos.local		IN SOA	ServidorDNS-DHCP.Ritos.local. root.Ritos.local. (
+				2021110440 ; serial
+				604800     ; refresh (1 week)
+				86400      ; retry (1 day)
+				2419200    ; expire (4 weeks)
+				604800     ; minimum (1 week)
+				)
+			NS	ServidorDNS-DHCP.Ritos.local.
+			A	192.168.10.1
+$ORIGIN Ritos.local.
+administrador		A	192.168.10.4
+			MX	0 ServidorDNS-DHCP
+ServidorDNS-DHCP	A	192.168.10.1
+			MX	0 ServidorDNS-DHCP
+www			A	192.168.10.7

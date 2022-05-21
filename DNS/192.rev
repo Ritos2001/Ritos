@@ -1,0 +1,13 @@
+$ORIGIN .
+$TTL 604800	; 1 week
+10.168.192.in-addr.arpa	IN SOA	ServidorDNS-DHCP.Ritos.local. root.Ritos.local. (
+				2021110395 ; serial
+				604800     ; refresh (1 week)
+				86400      ; retry (1 day)
+				2419200    ; expire (4 weeks)
+				604800     ; minimum (1 week)
+				)
+			NS	ServidorDNS-DHCP.Ritos.local.
+$ORIGIN 10.168.192.in-addr.arpa.
+1			PTR	ServidorDNS-DHCP.Ritos.local.
+7			PTR	www.Ritos.local
